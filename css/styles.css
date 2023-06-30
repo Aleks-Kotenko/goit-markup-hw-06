@@ -157,6 +157,7 @@ body {
 }
 
 .hero {
+ 
   margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -892,6 +893,8 @@ body {
     height: 436px;
   }
 
+ 
+
   .hero-title {
     margin-bottom: 36px;
     margin-left: auto;
@@ -947,6 +950,7 @@ body {
   }
 
   .hero {
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
