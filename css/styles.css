@@ -157,7 +157,6 @@ body {
 }
 
 .hero {
- 
   margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -176,14 +175,14 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/mob-hero.jpg);
   background-repeat: no-repeat;
 }
 
 .hero-title {
   margin-bottom: 72px;
-  margin-left: 54px;
-  margin-right: 54px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 36px;
 
@@ -891,9 +890,14 @@ body {
 
   .overlay {
     height: 436px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-hero.jpg);
+    background-repeat: no-repeat;
   }
-
- 
 
   .hero-title {
     margin-bottom: 36px;
