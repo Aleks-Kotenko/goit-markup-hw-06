@@ -261,6 +261,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.features-box-icon {
+  display: none;
+}
+
+.section-ourwork {
+  display: none;
+}
+
 /* Наша команда */
 .team {
   background-color: var(--second-grey-color);
@@ -919,13 +927,13 @@ body {
   .features .item {
     max-width: 396px;
   }
-  .features-box-icon {
+  /* .features-box-icon {
     display: none;
   }
 
   .section-ourwork {
     display: none;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -971,9 +979,9 @@ body {
     width: calc((100% - 24px) / 2);
   }
 
-  .features-box-icon {
+  /* .features-box-icon {
     display: none;
-  }
+  } */
 
   .team-list {
     gap: 64px 24px;
