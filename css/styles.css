@@ -692,7 +692,7 @@ body {
 }
 .modal {
   position: relative;
-  width: 408px;
+  width: 392px;
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -927,13 +927,6 @@ body {
   .features .item {
     max-width: 396px;
   }
-  /* .features-box-icon {
-    display: none;
-  }
-
-  .section-ourwork {
-    display: none;
-  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -1002,16 +995,27 @@ body {
     width: 168px;
   }
 
+  .footer .container {
+    padding-left: 108px;
+  }
+
   .footer-info {
+    justify-content: left;
     gap: 72px 24px;
   }
 
+  .footer-description {
+    text-align: left;
+  }
+  
   .footer-input {
     width: 264px;
   }
 
   .footer-form {
+    justify-content: left;
     gap: 24px;
+    flex-direction: row;
   }
 
   .footer-socials {
@@ -1025,11 +1029,16 @@ body {
   .socials {
     padding: 0;
   }
+
+  .footer-button {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  
   }
 
   .section {
@@ -1144,34 +1153,41 @@ body {
   }
 
   .footer {
-   
+    flex-wrap: nowrap;
+    flex-direction: row;
     padding-top: 101.5px;
     padding-bottom: 100px;
   }
 
+  .footer .container { 
+  padding-left: 16px;
+ 
+  }
+
   .footer-info {
+    justify-content: left;
     gap: 0;
+    
+  }
+
+  .footer-logo { 
+    align-items: left;
   }
 
   .footer-description {
+    display: block;
     margin-right: 120px;
+    width: 264px;
   }
   .footer-socials {
     margin-right: 80px;
   }
 
-  .footer-form { 
-    display: flex;
-  }
 
   .footer-button {
-    display: flex;
+    
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
-
-  .footer-form { 
-    display: inline;
-  }
-  
 }
