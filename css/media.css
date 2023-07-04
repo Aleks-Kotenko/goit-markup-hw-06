@@ -1,0 +1,445 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+
+  .features .item {
+    max-width: 396px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .open-menu-btm {
+    display: none;
+  }
+
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    margin-left: 120px;
+  }
+  .site-nav .item + .item {
+    margin-left: 40px;
+  }
+
+  .site-nav .link.link-current {
+    color: var(--accent-color);
+  }
+
+  .site-nav .link {
+    display: block;
+
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
+
+  .link-current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+    transition: var(--transition-hover-focus);
+  }
+  .contacts-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  .contacts-nav {
+    gap: 12px;
+  }
+  .contacts-nav .link {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #434455;
+    word-wrap: break-word;
+  }
+
+  .contacts-nav .link:hover,
+  .contacts-nav .link:focus {
+    color: var(--accent-color);
+    transition: var(--transition-hover-focus);
+  }
+
+  .overlay {
+    height: 436px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-hero.jpg);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) , 
+  (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/tablet-hero-x2.jpg);
+  background-repeat: no-repeat;
+  }
+}
+
+  .hero-title {
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 56px;
+
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    word-wrap: break-word;
+
+    width: 496px;
+    height: 120px;
+  }
+
+  .features {
+    gap: 72px 24px;
+  }
+  .features-title {
+    text-align: left;
+  }
+  .features .item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* .features-box-icon {
+      display: none;
+    } */
+
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  .clients-list {
+    gap: 72px 24px;
+  }
+
+  .clients-list {
+    justify-content: center;
+  }
+
+  .clients-list .item {
+    width: 168px;
+  }
+  .clients-link {
+    width: 168px;
+  }
+
+  .footer .container {
+    padding-left: 108px;
+  }
+
+  .footer-info {
+    justify-content: left;
+    gap: 72px 24px;
+  }
+
+  .footer-description {
+    text-align: left;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  .footer-form {
+    justify-content: left;
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .footer-socials {
+    text-align: left;
+  }
+
+  .subscribe {
+    text-align: left;
+  }
+
+  .socials {
+    padding: 0;
+  }
+
+  .footer-button {
+    margin: 0;
+  }
+
+  .button-list {
+    justify-content: center;
+  }
+
+  .project-list {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+  .site-nav .item + .item {
+    margin-left: 50px;
+  }
+
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+    transition: var(--transition-hover-focus);
+  }
+  .contacts-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .contacts-nav .item + .item {
+    margin-left: 50px;
+  }
+
+  .contacts-nav .link {
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    word-wrap: break-word;
+  }
+
+  .open-menu-btm {
+    display: none;
+  }
+
+  .hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .overlay {
+    height: 600px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero.jpg);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) , 
+  (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-x2.jpg);
+  background-repeat: no-repeat;
+  }
+}
+
+  .hero-title {
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 56px;
+
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    width: 496px;
+    height: 120px;
+
+    color: var(--primary-white-color);
+  }
+
+  .features .item {
+    max-width: unset;
+    width: calc((100% - 72px) / 4);
+  }
+
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+  }
+
+  .features-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-grey-color);
+    border-radius: 4px;
+    width: 264px;
+    height: 120px;
+  }
+  .features-icon {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+
+    gap: 24px;
+  }
+  .team-list .item {
+    width: calc((100%-72px) / 4);
+  }
+
+  .clients-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .clients-list .item {
+    width: 168px;
+  }
+
+  .section-ourwork {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .work-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .work-list .item:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .work-title {
+    margin-bottom: 72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+
+  .footer {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+  }
+
+  .footer .container {
+    padding-left: 16px;
+  }
+
+  .footer-info {
+    justify-content: left;
+    gap: 0;
+  }
+
+  .footer-logo {
+    align-items: left;
+  }
+
+  .footer-description {
+    display: block;
+    margin-right: 120px;
+    width: 264px;
+  }
+  .footer-socials {
+    margin-right: 80px;
+  }
+
+  .footer-button {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .projects-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .project-list {
+    gap: 48px 24px;
+  }
+
+  .button-list {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+}
