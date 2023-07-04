@@ -6,6 +6,10 @@
   .features .item {
     max-width: 396px;
   }
+
+  .socials-menu {
+    gap: 56px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -83,6 +87,7 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.04em;
@@ -108,18 +113,18 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) , 
-  (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/tablet-hero-x2.jpg);
-  background-repeat: no-repeat;
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-hero-x2.jpg);
+      background-repeat: no-repeat;
+    }
   }
-}
 
   .hero-title {
     margin-bottom: 36px;
@@ -133,7 +138,7 @@
     letter-spacing: 0.02em;
     word-wrap: break-word;
 
-    width: 496px;
+    max-width: 496px;
     height: 120px;
   }
 
@@ -147,10 +152,6 @@
     max-width: unset;
     width: calc((100% - 24px) / 2);
   }
-
-  /* .features-box-icon {
-      display: none;
-    } */
 
   .team-list {
     gap: 64px 24px;
@@ -176,6 +177,7 @@
   }
 
   .footer-info {
+    display: flex;
     justify-content: left;
     gap: 72px 24px;
   }
@@ -189,6 +191,7 @@
   }
 
   .footer-form {
+    display: flex;
     justify-content: left;
     gap: 24px;
     flex-direction: row;
@@ -216,6 +219,15 @@
 
   .project-list {
     gap: 72px 24px;
+  }
+
+  .modal {
+    position: relative;
+    width: 392px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
@@ -289,18 +301,18 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) , 
-  (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-x2.jpg);
-  background-repeat: no-repeat;
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-x2.jpg);
+      background-repeat: no-repeat;
+    }
   }
-}
 
   .hero-title {
     margin-bottom: 48px;
@@ -345,6 +357,10 @@
   .features-icon {
     align-items: center;
     justify-content: center;
+  }
+
+  .features-text {
+    font-weight: 400;
   }
 
   .team-list {
@@ -441,5 +457,9 @@
   .modal {
     width: 408px;
     min-height: 584px;
+    position: relative;
+    min-height: 584px;
+    border-radius: 4px;
+    padding: 72px 24px 24px 24px;
   }
 }
